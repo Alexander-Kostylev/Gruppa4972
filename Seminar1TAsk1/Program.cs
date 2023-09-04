@@ -7,9 +7,9 @@ int secondNum=int.Parse(Console.ReadLine()??"0");
 
 if(firstNum==Math.Pow(secondNum,2))
 {
-    Console.WriteLine("Число два является квадратом первого числа");
+    Console.WriteLine("Первое чило - это квадрат второго числа");
 }
 else
 {
-    Console.WriteLine("Число два неявляется квадратом первого числа");
+    Console.WriteLine("Первое число не является квадратом второго числа");
 }

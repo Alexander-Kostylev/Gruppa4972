@@ -3,6 +3,7 @@
 // Написать программу которая из имен через 
 // запятую выберет случайное имя и выведет в терминал
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Console.InputEncoding = System.Text.Encoding.GetEncoding("utf-16"); // кодировка ввода с клавиатуры, это общая кодировка для всех языков!
 
 // Ввод имен через запятую в одноу строку
 string inputData(string mes)
@@ -15,7 +16,7 @@ string inputData(string mes)
 // Разделяем строку на отдельные имена и сохраем в массив string
 string[] nameAr(string listName)
 {
-    string[] nameOfArray = listName.Split(',');
+    string[] nameOfArray = listName.Split(",");
     return nameOfArray;
 }
 
@@ -23,7 +24,7 @@ string[] nameAr(string listName)
 int randIndex(string [] arName)
 {
     var rnd=new Random();
-    int index=rnd.Next(1, (arName.Length)+1);
+    int index=rnd.Next(1, (arName.Length));
     return index;
 }
 

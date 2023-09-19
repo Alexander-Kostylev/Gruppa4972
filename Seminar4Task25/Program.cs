@@ -106,8 +106,9 @@ double calculator(int num1, int num2, char oper)
 }
 
 int number1 = readData("Введите 1-е число: ");
-int number2 = readData("Введите 2-е число: ");
 char op = outSimvol();
+int number2 = readData("Введите 2-е число: ");
+
 
 double result = calculator(number1, number2, op);
 

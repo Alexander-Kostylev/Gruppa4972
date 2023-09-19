@@ -30,37 +30,12 @@ long sumOfNumber(long num)
     return sum;
 }
 
-// long inputNumber = readData("Введите число: ");
-// long resultSum = sumOfNumber(inputNumber);
-// outConsole($"Сумма всех чисел в числе {inputNumber} = {resultSum}");
+long inputNumber = readData("Введите число: ");
+long resultSum = sumOfNumber(inputNumber);
+outConsole($"Сумма всех чисел в числе {inputNumber} = {resultSum}");
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // * Дополнительное задание.
 // Оценка времени работы алгоритма через вещественые числа и строки
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-char[] inputOnChar(string str)
-{
-    Console.WriteLine(str);
-    char[] chars = (Console.ReadLine() ?? "0").ToCharArray();
-    return chars;
-   
-}
-double sumOnChar(char []chars)
-{
- double sum = 0;
-    foreach (char op in chars)
-    {
-        sum += Char.GetNumericValue(op);
-    }
-    return sum;
-}
-
-long inputNumber = readData("Введите число: ");
-System.Console.WriteLine("время выполнения через вещественные");
-long resultSum = sumOfNumber(inputNumber);
-
-System.Console.WriteLine("время выаполнения через строки");
-sumOnChar
-outConsole($"Сумма всех чисел в числе {inputNumber} = {resultSum}");

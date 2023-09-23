@@ -11,7 +11,7 @@ void FibNum(int num)
     Console.Write(first + " " + second);
     for (int i = 2; i < num; i++)
     {
-        System.Console.WriteLine(" "+(first+second));
+        System.Console.Write(" "+(first+second));
         buf=first+second;
         first=second;
         second=buf;

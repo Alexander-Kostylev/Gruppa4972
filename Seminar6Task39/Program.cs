@@ -35,12 +35,14 @@ int[] SwapNewArray(int[] arr)
 
 void SwapArray(int[] arr)
 {
-    int buferElement=0;
-    for(int i=0; i<arr.Length/2; i++)
+    int buferElement = 0;
+    for (int i = 0; i < arr.Length / 2; i++)
     {
-        buferElement=arr[arr.Length-1-i];
-        arr[arr.Length-1-i]=arr[i];
-        arr[i]=buferElement;
+        buferElement = arr[arr.Length - 1 - i];
+        arr[arr.Length - 1 - i] = arr[i];
+        arr[i] = buferElement;
+        //(arr[arr.Length-1-i],arr[i])=(arr[i],arr[arr.Length-1-i]);  //аналогичный указанному выше коду через промежуточную переменную.
+        // синтаксический сахар 
     }
 }
 
@@ -49,5 +51,8 @@ PrintArray(arr);
 int[] swapArray = SwapNewArray(arr);
 System.Console.WriteLine("Исходный массив");
 PrintArray(arr);
-System.Console.WriteLine("Перевернутый массив");
+System.Console.WriteLine("Перевернутый массив через промежуточный массив");
 PrintArray(swapArray);
+System.Console.WriteLine("Перевернутый массив с исп. промежуточной переменной");
+SwapArray(arr);
+PrintArray(arr);

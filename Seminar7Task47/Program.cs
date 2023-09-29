@@ -4,13 +4,14 @@
 //      Дополнительное (со *): При выводе матрицы показывать каждую цифру разного цвета(цветов всего 16).
 // ===========================================================================================================
 
+
 int readData(string msg)
 {
     Console.Write(msg);
     int num = int.Parse(Console.ReadLine() ?? "0");
     return num;
 }
-
+// Заполнение массива двумерного массива случайными вещественными числами
 double[,] Fill2DArray(int countRow, int countColumm, int downBorder, int topDorder)
 {
     double[,] array2D = new double[countRow, countColumm];
@@ -25,6 +26,7 @@ double[,] Fill2DArray(int countRow, int countColumm, int downBorder, int topDord
     return array2D;
 }
 
+// Вывод двумерного массива в консоль разными цветами
 void Print2DArrayColor(double[,] matrix)
 {
     ConsoleColor[] colors = new ConsoleColor[]{ConsoleColor.Yellow,ConsoleColor.Blue,ConsoleColor.Cyan,

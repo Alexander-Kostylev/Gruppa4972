@@ -71,8 +71,8 @@ int[,] Update2DArr(int[,] mtrx, int x, int y)
                     n++;
                 }
             }
+            m++;
         }
-        m++;
         n = 0;
     }
     return result;
